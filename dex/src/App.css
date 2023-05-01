@@ -266,3 +266,10 @@ header {
   font-weight: 300;
   color: #51596f;
 }
+
+.disclaimer {
+  color: #98A1C0;
+  font-size: 14px;
+  padding: 0 8px 8px 8px;
+  margin: 0 0 8px 0;
+}

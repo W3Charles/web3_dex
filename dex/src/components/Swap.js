@@ -233,6 +233,9 @@ function Swap(props) {
           </div>
         </div>
         <div className="swapButton" disabled={!tokenOneAmount || !isConnected} onClick={fetchDexSwap}> Swap </div>
+        <div className="disclaimer">
+          <p>Disclaimer: Please note, users can only enter whole numbers to swap tokens at this time.</p>
+        </div>
       </div>
     </>
   )
