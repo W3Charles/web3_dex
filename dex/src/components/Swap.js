@@ -138,7 +138,7 @@ function Swap(props) {
     }    
 
   },[isLoading])
-  
+
 
   useEffect(()=>{
     messageApi.destroy();
@@ -199,40 +199,40 @@ function Swap(props) {
         </div>
       </Modal>
       <div className="tradeBox">
-      <div className="tradeBoxHeader">
-        <h4>Swap</h4>
-        <Popover
-          content={settings}
-          title="Settings"
-          trigger="click"
-          placement="bottomRight"
-        >
-          <SettingOutlined className="cog"/>
-        </Popover> 
-      </div>
-      <div className="inputs">
-        <Input 
-          placeholder="0" 
-          value={tokenOneAmount} 
-          onChange={changeAmount} 
-          disabled={!prices}
-        />
-        <Input placeholder="0" value={tokenTwoAmount} disabled={true} />
-        <div className="switchButton" onClick={switchTokens}>
-          <ArrowDownOutlined className="switchArrow" />
+        <div className="tradeBoxHeader">
+          <h4>Swap</h4>
+          <Popover
+            content={settings}
+            title="Settings"
+            trigger="click"
+            placement="bottomRight"
+          >
+            <SettingOutlined className="cog"/>
+          </Popover> 
         </div>
-        <div className="assetOne" onClick={() => openModal(1)}>
-          <img src={tokenOne.img} alt="assetOneLogo" className="assetLogo" />
-          {tokenOne.ticker}
-          <DownOutlined />
+        <div className="inputs">
+          <Input 
+            placeholder="0" 
+            value={tokenOneAmount} 
+            onChange={changeAmount} 
+            disabled={!prices}
+          />
+          <Input placeholder="0" value={tokenTwoAmount} disabled={true} />
+          <div className="switchButton" onClick={switchTokens}>
+            <ArrowDownOutlined className="switchArrow" />
+          </div>
+          <div className="assetOne" onClick={() => openModal(1)}>
+            <img src={tokenOne.img} alt="assetOneLogo" className="assetLogo" />
+            {tokenOne.ticker}
+            <DownOutlined />
+          </div>
+          <div className="assetTwo" onClick={() => openModal(2)}>
+            <img src={tokenTwo.img} alt="assetOneLogo" className="assetLogo" />
+            {tokenTwo.ticker}
+            <DownOutlined />
+          </div>
         </div>
-        <div className="assetTwo" onClick={() => openModal(2)}>
-        <img src={tokenTwo.img} alt="assetOneLogo" className="assetLogo" />
-          {tokenTwo.ticker}
-          <DownOutlined />
-        </div>
-      </div>
-      <div className="swapButton" disabled={!tokenOneAmount || !isConnected} onClick={fetchDexSwap}> Swap </div>
+        <div className="swapButton" disabled={!tokenOneAmount || !isConnected} onClick={fetchDexSwap}> Swap </div>
       </div>
     </>
   )
