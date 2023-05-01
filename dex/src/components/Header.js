@@ -1,5 +1,6 @@
 import React from 'react';
-import Logo from "../moralis-logo.svg";
+// import Logo from "../moralis-logo.svg";
+import Logo from "../dex_logo.png";
 import Eth from "../eth.svg";
 import { Link } from "react-router-dom";
 
