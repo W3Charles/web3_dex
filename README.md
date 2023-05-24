@@ -76,6 +76,6 @@ Give a ⭐️ if this project helped you!
 ## 📝 License
 
 Copyright © 2023 [Charles Sunday](https://github.com/W3Charles).<br />
-This project is [MIT](https://github.com/kefranabg/readme-md-generator/blob/master/LICENSE) licensed.
+This project is [MIT] licensed.
 
 ***
